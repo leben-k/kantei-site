@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-calendar.html
+
+Sitemap: https://leben-k.github.io/kantei-site/sitemap.xml
