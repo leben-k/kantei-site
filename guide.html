@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>筆跡鑑定・指紋鑑定とは｜筆跡指紋鑑定</title>
+<meta name="description" content="筆跡鑑定・指紋鑑定とは何か、それぞれの仕組みと、なぜ証拠として認められるのかを分かりやすく解説します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;600;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDE4D0; --panel:#F8F3E7; --ink:#211E1A; --ink-soft:#332C22;
+    --vermilion:#B7282E; --vermilion-deep:#8F1F24; --muted:#564F42; --line: rgba(33,30,26,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.95;}
+  h1,h2,h3{font-family:"Zen Old Mincho", serif; font-weight:700; margin:0;}
+  a{color:var(--vermilion);}
+  header{position:sticky; top:0; z-index:50; background:rgba(238,240,241,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  .header-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:760px; margin:0 auto;}
+  .brand-mark{font-size:16px; font-weight:700; font-family:"Zen Old Mincho",serif; text-decoration:none; color:var(--ink);}
+  .back-link{font-size:13px; text-decoration:none; color:var(--ink-soft); flex-shrink:0; margin-left:16px;}
+  .wrap{max-width:720px; margin:0 auto; padding:64px 24px 100px;}
+  .file-tag{font-size:12px; color:var(--muted); border:1px solid var(--line); padding:5px 12px; border-radius:2px; display:inline-block; margin-bottom:24px;}
+  h1{font-size:clamp(26px,4vw,36px); line-height:1.6; margin-bottom:16px;}
+  .lead{font-size:14.5px; color:var(--muted); margin-bottom:56px; padding-bottom:32px; border-bottom:1px solid var(--line);}
+
+  nav.jump{display:flex; gap:20px; flex-wrap:wrap; font-size:13.5px; margin-bottom:56px;}
+  nav.jump a{text-decoration:none; border-bottom:1px solid var(--vermilion); padding-bottom:2px;}
+
+  article{margin-bottom:64px; scroll-margin-top:90px;}
+  article .kicker{font-size:12px; color:var(--muted); display:block; margin-bottom:10px;}
+  article h2{font-size:clamp(22px,3vw,28px); margin-bottom:22px; line-height:1.6;}
+  article h3{font-size:16px; font-weight:700; font-family:"Zen Kaku Gothic New",sans-serif; margin:30px 0 10px;}
+  article p{font-size:14.5px; color:var(--ink-soft); margin:0 0 16px;}
+  article ul{margin:0 0 16px; padding-left:20px; font-size:14.5px; color:var(--ink-soft);}
+  article li{margin-bottom:8px;}
+
+  .principle-box{
+    background:var(--panel); border:1px solid var(--line); padding:22px 26px; margin:20px 0;
+  }
+  .principle-box .name{font-weight:700; font-size:14.5px; margin-bottom:6px; color:var(--ink);}
+  .principle-box p{margin:0; font-size:13.5px; color:var(--muted);}
+
+  .note-box{
+    border-left:3px solid var(--vermilion); padding:14px 20px; font-size:13px; color:var(--muted);
+    background:var(--panel); margin:24px 0;
+  }
+
+  .cta-box{
+    background:var(--panel); border:1px solid var(--line); padding:32px; text-align:center; margin-top:8px;
+  }
+  .cta-box p{margin-bottom:16px;}
+  .cta-box a.btn{
+    display:inline-block; background:var(--vermilion); color:#fff; text-decoration:none;
+    padding:14px 32px; font-size:14px; border-radius:2px;
+  }
+  .cta-box a.btn:hover{background:var(--vermilion-deep);}
+
+  .to-top{display:block; text-align:center; padding:20px 24px; font-size:13px; color:var(--muted); text-decoration:none; border-top:1px solid var(--line);}
+  .to-top:hover{color:var(--vermilion);}
+  footer{border-top:1px solid var(--line); padding:32px 24px; font-size:12.5px; color:var(--muted); text-align:center;}
+  footer a{color:inherit; text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand-mark" href="index.html">筆跡指紋鑑定</a>
+    <a class="back-link" href="index.html">&lt; トップに戻る</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <span class="file-tag">GUIDE</span>
+  <h1>筆跡鑑定・指紋鑑定とは何か。<br>そしてなぜ証拠になるのか。</h1>
+  <p class="lead">ご依頼の前に知っておきたい、2つの鑑定の基本的な考え方をまとめました。専門用語はできるだけ避け、仕組みと根拠を中心に説明します。</p>
+
+  <nav class="jump">
+    <a href="#handwriting">1. 筆跡鑑定とは</a>
+    <a href="#fingerprint">2. 指紋鑑定とは</a>
+    <a href="#why-evidence">3. なぜ証拠になるのか</a>
+  </nav>
+
+  <article id="handwriting">
+    <span class="kicker">1</span>
+    <h2>筆跡鑑定とは何か</h2>
+    <p>筆跡鑑定とは、遺言書・契約書・脅迫状などに書かれた文字が、特定の人物の手によるものかどうかを、字の形や書き方の特徴から見分ける鑑定です。占いや性格診断とは異なり、あくまで「誰が書いたか」を客観的に見極めるための技術です。</p>
+
+    <h3>人にはそれぞれ「書き方の癖」がある</h3>
+    <p>私たちが文字を書くとき、字形・書き順・筆圧のかけ方・線のつなげ方・文字と文字の間隔など、無意識のうちに再現される特徴があります。これは手や指を動かす運動のパターンが、練習や習慣を通じて体に定着していくためで、一人ひとりでかなりの違いが出ます。同じ人が書けば、多少の変化はあっても根本的な書き方の傾向は繰り返し現れやすく、逆に違う人が書けば、意識的に似せようとしてもどこかに違いが表れやすいとされています。</p>
+
+    <h3>鑑定士は何を見比べているのか</h3>
+    <ul>
+      <li>字画の形や角度、線の丸み・止め方・払い方</li>
+      <li>書き順や運筆の方向</li>
+      <li>筆圧の強弱やかかり方</li>
+      <li>文字の大きさ、行間・字間の取り方</li>
+      <li>特徴的な癖字（特定の文字の書き方の傾向）</li>
+    </ul>
+    <p>鑑定士は、問題となっている筆跡（対象筆跡）と、本人が書いたことが確実な複数の筆跡（対照筆跡）を並べ、これらの特徴が一致するか、それとも矛盾するかを一つひとつ照合していきます。一致点・相違点の両方を丁寧に洗い出し、総合的な判断として鑑定意見をまとめます。</p>
+
+    <div class="note-box">筆跡鑑定は、性格や心理状態を読み取る「筆跡診断・グラフォロジー」とは異なる分野です。当窓口でご紹介する鑑定は、あくまで「誰が書いたか」を科学的に検討する文書鑑定です。</div>
+  </article>
+
+  <article id="fingerprint">
+    <span class="kicker">2</span>
+    <h2>指紋鑑定とは何か</h2>
+    <p>指紋鑑定とは、指先の皮膚に刻まれた線状の模様（隆線）のパターンを比較し、現場に残された指紋と特定の人物の指紋が一致するかどうかを判定する鑑定です。盗難や不正侵入の調査、書類や所有物の真贋確認などに用いられます。</p>
+
+    <h3>指紋には2つの大きな特徴がある</h3>
+    <div class="principle-box">
+      <p class="name">万人不同（ばんにんふどう）</p>
+      <p>指紋の隆線が描く模様の細部は、一卵性双生児であっても完全には一致しないとされ、人によって異なります。</p>
+    </div>
+    <div class="principle-box">
+      <p class="name">終生不変（しゅうせいふへん）</p>
+      <p>指紋の基本パターンは胎児期にほぼ形成され、けがなどで表面が傷つかない限り、生涯を通じてほとんど変化しません。</p>
+    </div>
+
+    <h3>鑑定士は何を見比べているのか</h3>
+    <p>指紋の模様は、渦を巻くもの・ループ状のもの・弓状のものなど大まかな型に分類できますが、鑑定で重視されるのは、隆線が枝分かれする点（分岐点）や途切れる点（終点）といった、より細かな特徴点です。現場などから採取した指紋と、対象者から採取した指紋について、これらの特徴点の位置関係や現れ方を照合し、偶然では説明できないほど多くの一致が見られるかどうかを検討します。</p>
+
+    <div class="note-box">指紋の採取状況（付着した面の素材や経過時間など）によっては、鮮明な指紋が得られないこともあります。採取できるかどうか、あるいは対照指紋と一致するかどうかは、実際に調べてみないと分からない場合があることをご了承ください。</div>
+  </article>
+
+  <article id="why-evidence">
+    <span class="kicker">3</span>
+    <h2>なぜこれらが証拠になるのか</h2>
+    <p>筆跡鑑定・指紋鑑定がともに証拠として意味を持つのは、「個人ごとの再現しやすい特徴」と「他人とは区別しやすい特徴」の両方を、一定の観察・比較の手続きに沿って確認できるためです。</p>
+
+    <h3>個人の中で繰り返し現れる特徴であること</h3>
+    <p>筆跡であれば書き方の癖、指紋であれば隆線のパターンは、いずれも同じ人であれば時間や状況が変わっても比較的安定して現れやすい特徴です。この再現性があるからこそ、複数のサンプルを見比べて「その人らしさ」を見極めることができます。</p>
+
+    <h3>他人との間で区別しやすい特徴であること</h3>
+    <p>一方で、これらの特徴は人によって現れ方が異なりやすく、他人が意図的に似せようとしても細部まで完全に再現することは難しいとされています。この「区別のしやすさ」が、対象筆跡・対象指紋の持ち主を絞り込む手がかりになります。</p>
+
+    <h3>手続きに沿った照合と、意見としての鑑定書</h3>
+    <p>鑑定士は、対象と対照を並べて特徴を一つずつ照合し、一致点・相違点を整理した上で、専門家としての意見を鑑定書としてまとめます。この鑑定書は、当事者どうしの話し合いや調停の場での説明資料として、あるいは裁判における証拠のひとつとして提出されることがあります。ただし、鑑定書はあくまで専門家の分析に基づく「意見」であり、最終的にその証拠としての価値をどう評価するかは、裁判所など判断する側に委ねられている点にご留意ください。</p>
+  </article>
+
+  <div class="cta-box">
+    <p>ご自身のケースで鑑定が可能かどうか、まずはご相談ください。</p>
+    <a class="btn" href="index.html#contact">無料相談する</a>
+  </div>
+</div>
+
+<a class="to-top" href="index.html">▲ トップページへ戻る</a>
+
+<footer>
+  © 2026 <a href="index.html">筆跡指紋鑑定</a>　／　<a href="index.html#contact">無料相談はこちら</a>　／　<a href="news.html">お知らせ</a>　／　<a href="important-notice.html">重要事項説明</a>　／　<a href="about.html">業務概要</a>　／　<a href="privacy.html">プライバシーポリシー</a>
+</footer>
+
+</body>
+</html>
