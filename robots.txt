@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /admin-calendar.html
-
+Disallow: /about.html
+Disallow: /privacy.html
+Disallow: /calendar.html
+Disallow: /news.html
 Sitemap: https://leben-k.github.io/kantei-site/sitemap.xml
