@@ -189,6 +189,14 @@
   }
   .service-photo img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s ease;}
   .service-photo:hover img{transform:scale(1.04);}
+  .service-photo svg{width:100%; height:auto; display:block; background:var(--paper); transition:transform .3s ease;}
+  .service-photo:hover svg{transform:scale(1.04);}
+
+  /* ---------- AI tool sheet (simplified check) ---------- */
+  .service-sheet.ai-tool-sheet{border-color:var(--vermilion); border-width:1px;}
+  .service-sheet.ai-tool-sheet .service-sheet-head{background:rgba(183,40,46,0.06);}
+  .service-sheet.ai-tool-sheet .kind{color:var(--vermilion); font-weight:700;}
+  .ai-tool-caption{font-size:12.5px; color:var(--muted); margin:14px 0 0; text-align:center;}
   .service-sheet h3{font-size:22px; margin-bottom:12px;}
   .service-sheet p.desc{font-size:14.5px; color:var(--ink-soft); margin-bottom:18px;}
   .service-sheet ul{margin:0; padding-left:0; list-style:none; font-size:13.5px; color:var(--muted);}
@@ -469,6 +477,49 @@
         <a class="service-photo" href="guide.html#fingerprint" aria-label="指紋鑑定とは何か、詳しく見る">
           <img src="fingerprint.jpg" alt="指紋鑑定のイメージ：指紋データを照合する様子">
         </a>
+      </div>
+    </div>
+
+    <div class="service-sheet ai-tool-sheet">
+      <div class="service-sheet-head">
+        <span class="kind">簡易チェック</span>
+        <span class="no">AI筆跡照合支援ツール</span>
+      </div>
+      <div class="service-sheet-body">
+        <div>
+          <h3>まずはAIで傾向を確認したい方へ</h3>
+          <p class="desc">正式な鑑定をご依頼いただく前に、傾向だけ手早く確認したいという方には、AIによる筆跡照合支援ツールもご用意しています。試料筆跡と対照筆跡をアップロードし、画像の統計的な特徴を数値化して照合するためのツールです。このAI筆跡鑑定は、お預かりしたスタッフが対応いたします。</p>
+          <ul>
+            <li>算出されるのはあくまで参考値です</li>
+            <li>法的な証拠能力を持つ鑑定書ではありません</li>
+            <li>裁判・契約など正式な証拠が必要な場合は、上記の鑑定士による鑑定をご利用ください</li>
+          </ul>
+          <p class="sheet-link"><a href="https://leben-k.github.io/ai-kantei/index.html">AI筆跡照合支援ツールを開く →</a></p>
+        </div>
+        <div>
+          <a class="service-photo" href="https://leben-k.github.io/ai-kantei/index.html" aria-label="AI筆跡照合支援ツールを開く">
+            <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <rect x="0" y="0" width="480" height="260" fill="var(--panel)"/>
+              <rect x="20" y="230" width="440" height="6" fill="var(--line)"/>
+              <path d="M120 210 L360 210 L380 230 L100 230 Z" fill="var(--ink)"/>
+              <rect x="150" y="72" width="180" height="138" rx="8" fill="var(--ink)"/>
+              <rect x="160" y="82" width="160" height="118" rx="4" fill="var(--panel)"/>
+              <path d="M175 122 q10 -18 20 0 t20 0 t20 0 t20 0" fill="none" stroke="var(--ink-soft)" stroke-width="3" stroke-linecap="round"/>
+              <path d="M175 146 q8 -14 16 0 t16 0 t16 0 t16 0 t16 0" fill="none" stroke="var(--ink-soft)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="262" cy="134" r="26" fill="rgba(183,40,46,0.08)" stroke="var(--vermilion)" stroke-width="5"/>
+              <line x1="281" y1="153" x2="300" y2="172" stroke="var(--vermilion)" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="262" cy="134" r="10" fill="none" stroke="var(--vermilion)" stroke-width="3"/>
+              <path d="M257 134 l4 4 l8 -9" fill="none" stroke="var(--vermilion)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="345" y="92" width="80" height="108" rx="4" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
+              <line x1="360" y1="114" x2="410" y2="114" stroke="var(--ink-soft)" stroke-width="3" stroke-linecap="round"/>
+              <line x1="360" y1="128" x2="410" y2="128" stroke="var(--ink-soft)" stroke-width="3" stroke-linecap="round"/>
+              <line x1="360" y1="142" x2="395" y2="142" stroke="var(--ink-soft)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="393" cy="172" r="14" fill="none" stroke="var(--vermilion)" stroke-width="3"/>
+              <text x="393" y="177" text-anchor="middle" font-family="'Zen Old Mincho',serif" font-size="13" fill="var(--vermilion)">印</text>
+            </svg>
+          </a>
+          <p class="ai-tool-caption">クリックしてAI筆跡照合支援ツールへ</p>
+        </div>
       </div>
     </div>
   </div>
