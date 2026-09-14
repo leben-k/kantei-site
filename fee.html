@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鑑定料金｜筆跡指紋鑑定</title>
+<meta name="description" content="筆跡鑑定・指紋鑑定の料金一覧と、鑑定をご検討中の方に役立つ基礎知識をご案内しています。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDE4D0;
+    --paper-light:#F8F3E7;
+    --ink:#211E1A;
+    --seal:#B7282E;
+    --navy:#33465C;
+    --muted:#463F33;
+    --line: rgba(33,30,26,0.14);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Noto Sans JP", sans-serif; line-height:1.9;
+  }
+  h1,h2{font-family:"Shippori Mincho", serif; font-weight:700; margin:0;}
+  .mono{font-family:"JetBrains Mono", monospace;}
+  a{color:var(--seal);}
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(237,228,208,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:800px; margin:0 auto;
+  }
+  .brand-mark{font-size:16px; font-weight:800; font-family:"Shippori Mincho",serif; text-decoration:none; color:var(--ink); line-height:1.3;}
+  @media (min-width:480px){ .brand-mark{font-size:20px;} }
+  .back-link{font-size:13px; font-family:"JetBrains Mono",monospace; text-decoration:none; color:var(--navy); flex-shrink:0; margin-left:16px;}
+  .wrap{max-width:760px; margin:0 auto; padding:64px 24px 100px;}
+  .file-tag{
+    font-size:12px; color:var(--muted); font-family:"JetBrains Mono",monospace;
+    border:1px solid var(--line); padding:5px 12px; border-radius:2px;
+    display:inline-block; margin-bottom:24px;
+  }
+  h1{font-size:clamp(24px,4vw,34px); margin-bottom:12px;}
+  .updated{font-size:12px; color:var(--muted); font-family:"JetBrains Mono",monospace; margin-bottom:20px;}
+  .lead{font-size:14px; color:var(--muted); margin-bottom:48px; padding-bottom:32px; border-bottom:1px solid var(--line);}
+  section{margin-bottom:44px;}
+  h2{
+    font-size:16px; margin-bottom:16px; display:flex; align-items:baseline; gap:12px;
+    padding-bottom:10px; border-bottom:1px solid var(--line);
+  }
+  h2 .qn{
+    font-family:"JetBrains Mono",monospace; color:var(--seal); font-size:15px; flex-shrink:0;
+  }
+  h3{
+    font-family:"Noto Sans JP",sans-serif; font-weight:700; font-size:14px; margin:20px 0 8px;
+    color:var(--navy);
+  }
+  p, li{font-size:14px; color:var(--ink);}
+  ul{padding-left:20px; margin:8px 0;}
+  li{margin-bottom:6px;}
+
+  /* ---------- Price table ---------- */
+  .price-table{width:100%; border-collapse:collapse; margin-bottom:8px;}
+  .price-table caption{
+    text-align:left; font-weight:700; font-size:14.5px; padding:14px 0 10px;
+    font-family:"Shippori Mincho",serif;
+  }
+  .price-table th, .price-table td{
+    padding:12px 10px; border-bottom:1px solid var(--line); font-size:13.5px; text-align:left;
+  }
+  .price-table thead th{
+    font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); font-weight:400;
+    border-bottom:1px solid var(--ink);
+  }
+  .price-table td.price{
+    font-family:"JetBrains Mono",monospace; font-size:14px; color:var(--seal); white-space:nowrap; text-align:right;
+  }
+  .price-note{font-size:12px; color:var(--muted); margin-top:8px;}
+
+  .plan-box{
+    background:var(--paper-light); border:1px solid var(--line); padding:16px 18px; margin-bottom:10px;
+  }
+  .plan-box .name{font-weight:700; font-size:14px; margin-bottom:6px;}
+  .plan-box .desc{font-size:13px; color:var(--muted); margin:0;}
+  .highlight{
+    background:var(--paper-light); border-left:3px solid var(--seal);
+    padding:16px 18px; font-size:13px; color:var(--muted);
+  }
+  .note-box{
+    border-left:3px solid var(--seal); padding:14px 20px; font-size:13px; color:var(--muted);
+    background:var(--paper-light); margin:20px 0;
+  }
+  .cta-box{
+    background:var(--paper-light); border:1px solid var(--line); padding:32px; text-align:center; margin-top:8px;
+  }
+  .cta-box p{margin-bottom:16px; font-size:14px;}
+  .cta-box a.btn{
+    display:inline-block; background:var(--seal); color:#fff; text-decoration:none;
+    padding:14px 32px; font-size:14px; border-radius:2px;
+  }
+  .cta-box a.btn:hover{background:#8F1F24;}
+
+  .to-top{
+    display:block; text-align:center; padding:20px 24px;
+    font-size:13px; font-family:"JetBrains Mono",monospace;
+    color:var(--navy); text-decoration:none; border-top:1px solid var(--line);
+  }
+  .to-top:hover{color:var(--seal);}
+  footer{border-top:1px solid var(--line); padding:32px 24px; font-size:12px; color:var(--muted); text-align:center;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand-mark" href="index.html">筆跡指紋鑑定</a>
+    <a class="back-link" href="index.html">&lt; トップに戻る</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <span class="file-tag mono">FEE &amp; GUIDE</span>
+  <h1>鑑定料金</h1>
+  <p class="lead">筆跡鑑定・指紋鑑定それぞれの料金と、鑑定をご検討いただく前に知っておくと役立つ基礎知識をまとめました。詳しい鑑定内容については<a href="important-notice.html">重要事項説明</a>もあわせてご確認ください。</p>
+
+  <section>
+    <h2><span class="qn">1</span>筆跡鑑定の料金</h2>
+    <table class="price-table">
+      <thead>
+        <tr><th>プラン</th><th>料金（税込）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>簡易筆跡鑑定</td><td class="price">121,000円〜</td></tr>
+        <tr><td>一般調査鑑定</td><td class="price">275,000円〜</td></tr>
+        <tr><td>精密鑑定</td><td class="price">440,000円〜</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">※料金は鑑定資料の点数や内容により変動します。詳細は無料相談にてお見積りいたします。</p>
+  </section>
+
+  <section>
+    <h2><span class="qn">2</span>指紋鑑定の料金</h2>
+    <table class="price-table">
+      <thead>
+        <tr><th>プラン</th><th>料金（税込）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>事実確認調査</td><td class="price">198,000円〜</td></tr>
+        <tr><td>一般調査鑑定</td><td class="price">297,000円〜</td></tr>
+        <tr><td>精密鑑定</td><td class="price">440,000円〜</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">※指紋の採取状況（付着面の素材や経過時間など）によって、別途採取費用が生じる場合があります。</p>
+  </section>
+
+  <div class="note-box">
+    お支払いは全額前払いとなります。鑑定資料が複数ある場合や、途中で追加鑑定が生じた場合の扱いについては、<a href="important-notice.html">重要事項説明</a>をご確認ください。
+  </div>
+
+  <section>
+    <h2><span class="qn">3</span>鑑定をご検討中の方へ　基礎知識</h2>
+
+    <h3>筆跡鑑定で準備しておきたいもの</h3>
+    <ul>
+      <li>対象筆跡（問題となっている書類）は、できる限り原本をご用意ください。コピーやスキャンデータでは、線の重なりや筆圧の情報が失われ、鑑定の精度に影響することがあります。</li>
+      <li>対照筆跡（本人が書いたことが確実な資料）は、対象筆跡と近い時期・近い状況（同じ筆記具、同じような文字数）で書かれたものが複数あると、より精度の高い照合が可能になります。</li>
+      <li>年賀状、契約書の控え、日記、メモなど、日常的に書かれた筆跡は特に有効な資料になりやすい傾向があります。</li>
+    </ul>
+
+    <h3>指紋鑑定で気をつけたいこと</h3>
+    <ul>
+      <li>指紋が付着している可能性のある対象物は、素手で不用意に触れないようにしてください。新たな指紋が重なると、採取や照合が難しくなることがあります。</li>
+      <li>対象物は、清潔な袋や箱に入れ、こすれたり圧力がかかったりしないよう保管・郵送してください。</li>
+      <li>対照指紋（照合対象となるご本人の指紋）は、鑑定士のご案内に従って別途採取いただく場合があります。</li>
+    </ul>
+
+    <h3>鑑定にかかる期間の目安</h3>
+    <p>内容にもよりますが、資料到着後おおむね3〜4週間程度が目安です。裁判の期日が迫っているなど、お急ぎの事情がある場合は、無料相談の際にその旨をお伝えください。</p>
+
+    <h3>鑑定書はどのように使われるか</h3>
+    <p>鑑定書は、相続時の遺言書の真偽確認、契約書や借用書の偽造疑惑の検証、社内不正・情報漏洩の調査など、さまざまな場面でご利用いただいています。当事者間の話し合いの資料として使われる場合もあれば、裁判における証拠のひとつとして提出される場合もあります。</p>
+
+    <h3>よくある誤解</h3>
+    <ul>
+      <li>筆跡鑑定は、性格や心理状態を読み取る「筆跡診断・グラフォロジー」とは異なる分野です。当窓口の鑑定は、あくまで「誰が書いたか」を検討する文書鑑定です。</li>
+      <li>指紋は、対象物の状態によっては鮮明に採取できないことがあります。採取できるかどうか、対照指紋と一致するかどうかは、実際に調べてみないと分からない場合があります。</li>
+      <li>鑑定書はあくまで専門家の分析に基づく「意見」であり、その証拠としての価値をどう評価するかは、最終的に裁判所など判断する側に委ねられます。</li>
+    </ul>
+
+    <div class="note-box">筆跡鑑定・指紋鑑定それぞれの基本的な仕組みについては、<a href="guide.html">筆跡鑑定・指紋鑑定とは</a>のページでも詳しく解説しています。</div>
+  </section>
+
+  <div class="cta-box">
+    <p>料金や進め方について、まずは無料相談でお気軽にお尋ねください。</p>
+    <a class="btn" href="index.html#contact">無料相談する</a>
+  </div>
+</div>
+
+<a class="to-top" href="index.html">▲ トップページへ戻る</a>
+
+<footer>
+  © 2026 <a href="index.html" style="color:inherit; text-decoration:underline;">筆跡指紋鑑定</a>
+  　／　<a href="index.html#contact" style="color:inherit; text-decoration:underline;">無料相談はこちら</a>
+  ／　<a href="news.html" style="color:inherit; text-decoration:underline;">お知らせ</a>　／　<a href="important-notice.html" style="color:inherit; text-decoration:underline;">重要事項説明</a>　
+  ／　<a href="about.html" style="color:inherit; text-decoration:underline;">業務概要</a>　／　<a href="privacy.html" style="color:inherit; text-decoration:underline;">プライバシーポリシー</a>　／　<a href="fee.html" style="color:inherit; text-decoration:underline;">鑑定料金</a>
+</footer>
+
+</body>
+</html>
